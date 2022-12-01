@@ -1,0 +1,135 @@
+$app-utilities: (
+  "width":
+    map-merge(
+      map-get($utilities, "width"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "width"), "values"),
+            (
+              "auto": auto,
+              "min": min-content,
+              "max": max-content,
+              "quarter": 25%,
+              "half": 50%,
+              "full": 100%,
+              "45vw": 45vw,
+              "6rem": 6rem,
+            )
+          ),
+      )
+    ),
+  "max-width":
+    map-merge(
+      map-get($utilities, "max-width"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "max-width"), "values"),
+            (
+              "35rem": 35rem,
+              "50rem": 50rem,
+              "full": 100%,
+            )
+          ),
+      )
+    ),
+  "height":
+    map-merge(
+      map-get($utilities, "height"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "height"), "values"),
+            (
+              "min": min-content,
+              "max": max-content,
+              "full": 100%,
+              "4rem": 4rem,
+              "6rem": 6rem,
+              "28vw": 28vw,
+              "40vw": 40vw,
+            )
+          ),
+      )
+    ),
+  "color":
+    map-merge(
+      map-get($utilities, "color"),
+      (
+        responsive: true,
+        state: hover,
+      )
+    ),
+  "rounded":
+    map-merge(
+      map-get($utilities, "rounded"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              "3rem": 3rem,
+              "full": 100%,
+            )
+          ),
+      )
+    ),
+  "shadow":
+    map-merge(
+      map-get($utilities, "shadow"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "shadow"), "values"),
+            (
+              large: 0px 0px 10px rgba(0, 0, 0, 0.5),
+            )
+          ),
+      )
+    ),
+  "object-fit": (
+    property: object-fit,
+    class: object,
+    values: (
+      "cover": cover,
+      "contain": contain,
+    ),
+  ),
+  "object-pos": (
+    property: object-position,
+    class: object,
+    values: (
+      "center": center,
+      "top": top,
+    ),
+  ),
+  "position":
+    map-merge(
+      map-get($utilities, "position"),
+      (
+        responsive: true,
+      )
+    ),
+  "fillter": (
+    property: filter,
+    class: filter,
+    responsive: true,
+    state: hover,
+    values: (
+      "bright-110": brightness(110%),
+    ),
+  ),
+  "cursor": (
+    property: cursor,
+    class: cursor,
+    values: (
+      pointer: pointer,
+    ),
+  ),
+);
