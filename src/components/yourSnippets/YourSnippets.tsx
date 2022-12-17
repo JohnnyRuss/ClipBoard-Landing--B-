@@ -12,14 +12,14 @@ const YourSnippets: React.FC = () => {
       <Container className="d-flex flex-column align-items-center pb-xl-5rem">
         <Heading as="h2" title={snippets.title} />
         <Text className="mw-50rem mt-2rem">{snippets.description}</Text>
-        <Figure className="position-lg-absolute start-0 bottom-0 h-lg-28vw w-full w-md-75 w-lg-auto mt-4rem mt-lg-0">
+        <Figure className="position-lg-absolute start-0 bottom-0 w-half w-lg-30vw mt-4rem mt-lg-0">
           <Figure.Image
             src="/assets/image-computer.png"
             alt="snippets illustration"
             className="w-full h-full object-fit-cover object-pos-center"
           />
         </Figure>
-        <Container className="d-flex mt-6rem">
+        <Container className="d-flex mt-2rem mt-sm-6rem">
           <div className="ms-auto w-full w-lg-half d-flex flex-column gap-4">
             {snippets.snippetsList.map((snippet) => (
               <Card key={snippet.id} className="border-0">

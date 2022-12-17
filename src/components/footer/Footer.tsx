@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
             className="d-flex justify-content-center justify-content-md-end gap-4"
           >
             {footer.figs.map((fig) => (
-              <Figure className="cursor-pointer">
+              <Figure className="cursor-pointer" key={fig}>
                 <Figure.Image src={fig} alt={fig} />
               </Figure>
             ))}
