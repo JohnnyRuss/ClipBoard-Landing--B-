@@ -9,10 +9,10 @@ import { snippets } from "../../utils/data";
 const YourSnippets: React.FC = () => {
   return (
     <Container fluid className="bgi-snippets position-relative">
-      <Container className="d-flex flex-column align-items-center pb-xl-5rem">
+      <Container className="d-flex flex-column align-items-center pb-xl-5rem position-relative">
         <Heading as="h2" title={snippets.title} />
         <Text className="mw-50rem mt-2rem">{snippets.description}</Text>
-        <Figure className="position-lg-absolute start-0 bottom-0 w-half w-lg-30vw mt-4rem mt-lg-0">
+        <Figure className="position-lg-absolute start-0 bottom-0 w-half w-xl-50rem w-lg-45rem  mt-4rem mt-lg-0">
           <Figure.Image
             src="/assets/image-computer.png"
             alt="snippets illustration"
